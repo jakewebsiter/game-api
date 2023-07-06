@@ -19,6 +19,7 @@ app.get('/data', (req, res) => {
 });
 
 app.get('/framework', (req, res) => {
+  res.setHeader('Content-Encoding', 'br');
   res.download('./Build/unity-gameeee.framework.js.br');
 });
 
